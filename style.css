@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+
+.container{
+    position: relative;
+    width: 50vw;
+    box-shadow: 2px 2px 2px 2px grey;
+    transform: translate(50%,50%);
+ background-color: linear-gradient(to bottom rgba(34,134,234),rgb(5, 70, 134));
+display: grid;
+grid-template-columns: repeat(2,1fr);
+overflow: hidden;
+
+}
+.container .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+font-size: 2rem;
+color: rebeccapurple;
+}
+.logo img{
+    border-radius: 50%;
+}
+
+.container .description{
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin: 1rem;
+    color: purple;
+    
+}
+.info{
+background-color: ;
+padding: 1rem ;
+border-left: .2rem solid rgb(69, 69, 248);
+margin: 1rem;
+
+}
+.info .name span{
+    font-size: 2rem;
+}
+.elements{
+    
+    padding-right: 1rem ;
+}
+.elements .item{
+padding-left: 5px;
+    border-right: 2px solid black;
+    display: flex;
+    margin-bottom: 1rem
+}
+
+.item .icon{
+    border-radius: 50%;
+    padding: 2px;
+    border: 1px solid black;
+    margin-right: 1rem;
+
+}
+
+.container::before{
+    content: "";
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    background-color: purple;
+    top: -95%;
+    left: 5%;
+    border-radius: 5rem;
+
+}
+.container::after{
+    content: "";
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    background-color: purple;
+    bottom: -95%;
+    left: 5%;
+    border-radius: 5rem;
+
+}
+
+
+
